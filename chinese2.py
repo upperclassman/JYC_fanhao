@@ -4,14 +4,14 @@ from lxml import etree
 import csv
 
 # 1.定义要爬取的页面
-urls = ["https://javdb.com/actors/MbNR?page=2&sort_type=0&t=d%2Cs"]
-for i in range(1, 2):
+urls = ["https://javdb.com/actors/Oz9y?page=1"]
+for i in range(2, 7):
 # 2.定义页码
-    url = 'https://javdb.com/actors/MbNR?page=' + str(i)+'&sort_type=0&t=d%2Cs'
+    url = 'https://javdb.com/actors/Oz9y?page=' + str(i)
     urls.append(url)
 
 # 定义csv文件的表头
-csv_file = open('nai.csv', 'w', newline='', encoding='utf-8')
+csv_file = open('laimingguang1.csv', 'w', newline='', encoding='utf-8')
 writer = csv.writer(csv_file)
 writer.writerow(['标题', '内容'])
 
